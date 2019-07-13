@@ -1,0 +1,21 @@
+server:
+  port: 8761
+#配置apollo属性w
+app:
+  id: pwade
+apollo:
+  meta: http://127.0.0.1:8080  #apollo地址
+  bootstrap:
+    namespaces: application,pwade1,pwade.yml
+    enabled: true
+    eagerLoad:
+      enabled: true
+
+
+logging:
+  level:
+    com:
+      gf:
+        controller: debug
+
+
